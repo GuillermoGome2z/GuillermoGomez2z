@@ -238,8 +238,6 @@ const guillermo = {
 - 💻 Las mejores prácticas de TypeScript
 <!-- BLOG-POST-LIST:END -->
 
-> 📝 *Nota: Esta sección se puede automatizar con GitHub Actions para mostrar tus posts reales*
-
 ---
 
 ## 📫 Conecta Conmigo
