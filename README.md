@@ -5,7 +5,7 @@
 
 # 👋 Hola, soy Guillermo Gomez Aguilera
 
-### 💻 Desarrollador Full Stack | 🎨 Creador de Experiencias Digitales | 🚀 Apasionado por la Tecnología
+### 💻 Desarrollador Junior | 🎨 Creador de Experiencias Digitales | 🚀 Apasionado por la Tecnología
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=7C3AED&center=true&vCenter=true&multiline=true&width=600&height=100&lines=Construyendo+el+futuro+con+código+✨;De+Guazacapan%2C+Santa+Rosa+🇬🇹;Transformando+ideas+en+realidad+💡;13+Repositorios+Públicos+🚀" alt="Typing SVG" />
@@ -28,7 +28,7 @@ const guillermo = {
     email: "gomezguille391@gmail.com",
     githubUsername: "GuillermoGome2z",
     publicRepos: 13,
-    currentFocus: "Desarrollo Full Stack & Experiencias de Usuario",
+    currentFocus: "Desarrollo Junior & Experiencias de Usuario",
     technologies: {
         frontEnd: ["React", "Vue", "JavaScript", "TypeScript", "HTML5", "CSS3"],
         backEnd: ["Node.js", "Express", "Python", "Django", "PHP"],
