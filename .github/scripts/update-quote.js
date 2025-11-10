@@ -57,17 +57,42 @@ const quotes = [
 const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 const timestamp = new Date().toISOString().replace('T', ' ').substring(0, 19);
 
-// Codificar el texto para URL (reemplazar espacios y caracteres especiales)
+// Codificar el texto para URL
 const encodedText = encodeURIComponent(randomQuote.text);
 
-const quoteSection = `## 💡 Frase Motivacional del Día\n\n<div align=\"center\">\n\n<table>\n<tr>\n<td align=\"center\" style=\"padding: 20px;\">\n\n<img src=\"https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=${randomQuote.color}&center=true&vCenter=true&width=700&height=100&lines=${encodedText}\" alt=\"Motivational Quote\" />\n\n<br>\n\n<img src=\"https://img.shields.io/badge/Última_actualización-${timestamp.replace(' ', '_').replace(/:/g, '%3A')}-${randomQuote.color}?style=for-the-badge&logo=github&logoColor=white\" alt=\"Last Updated\" />\n\n<br><br>\n\n<sub>${randomQuote.emoji} Esta frase cambia automáticamente cada 6 horas ${randomQuote.emoji}</sub>\n\n</td>\n</tr>\n</table>\n\n</div>`;
+// Formatear timestamp para el badge (sin caracteres especiales problemáticos)
+const badgeTimestamp = timestamp.replace(/:/g, '%3A').replace(/ /g, '_');
+
+const quoteSection = `## 💡 Frase Motivacional del Día
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center" style="padding: 20px;">
+
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=999999999&repeat=false&color=${randomQuote.color}&center=true&vCenter=true&width=800&height=80&lines=${encodedText}" alt="Motivational Quote" />
+
+<br><br>
+
+<sub>${randomQuote.emoji} Última actualización: ${timestamp} UTC ${randomQuote.emoji}</sub>
+
+<br>
+
+<sub>💫 Esta frase cambia automáticamente cada 6 horas 💫</sub>
+
+</td>
+</tr>
+</table>
+
+</div>`;
 
 // Leer README actual
 let readme = fs.readFileSync('README.md', 'utf8');
 
 // Marcadores para encontrar la sección
 const startMarker = '## 💡 Frase Motivacional';
-const endMarker = '---\n\n## 📚'; // La siguiente sección después de las frases
+const endMarker = '---\n\n## 📚';
 
 const startIndex = readme.indexOf(startMarker);
 const endIndex = readme.indexOf(endMarker, startIndex);
