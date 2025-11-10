@@ -201,11 +201,31 @@ const guillermo = {
 
 ---
 
-## 💡 Frase Motivacional del Día
+---
+
+## 💡 Frase Motivacional
 
 <div align="center">
 
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote" />
+### ✨ Para Desarrolladores
+
+<table>
+<tr>
+<td align="center">
+
+**"El código limpio es el arte de la simplicidad"** 🎨
+
+**"Cada error es una lección, cada commit es un logro"** 💪
+
+**"La mejor forma de predecir el futuro es construirlo con código"** 🚀
+
+**"No cuentes los días, haz que los días cuenten"** ⚡
+
+**"Transforma problemas en soluciones, ideas en realidad"** ✨
+
+</td>
+</tr>
+</table>
 
 </div>
 
